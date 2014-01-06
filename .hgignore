@@ -1,0 +1,15 @@
+syntax: glob
+.idea/.name
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes/scope_settings.xml
+.idea/talento.iml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea
+node_modules
+.tmp
+dist
+test-results.xml
+app/bower_components

@@ -1,0 +1,31 @@
+<div class="hero-unit">
+    <h1>Testing in Angular Applications</h1>
+
+    <div>
+        <ul>
+            <li>
+                <span>How many people use unit testing in their projects?</span>
+                <input class="hero-input" ng-model="unit" ng-change="updateValues(unitCode, unit)" ng-pattern="/^[0-9]+$/">
+            </li>
+
+            <li>
+                <span>How many people use e2e testing in their projects?</span>
+                <input class="hero-input" ng-model="e2e" ng-change="updateValues(e2eCode, e2e)" ng-pattern="/^[0-9]+$/">
+            </li>
+
+            <li>
+                <span>How many people use both types of testing in their projects?</span>
+                <input class="hero-input" ng-model="both" ng-change="updateValues(bothCode, both)" ng-pattern="/^[0-9]+$/">
+            </li>
+
+            <li>
+                <span>How many people don't test their projects at all?</span>
+                <input class="hero-input" ng-model="none" ng-change="updateValues(noneCode, none)" ng-pattern="/^[0-9]+$/">
+            </li>
+        </ul>
+    </div>
+
+    <h3>Total: {{total}} people</h3>
+
+    <div pi-chart values="values" height="height" width="width"></div>
+</div>
